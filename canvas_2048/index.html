@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2048</title>
+</head>
+<script src="canvas_2048.js"></script>
+<style>
+    button{
+        border: none;
+        color: darkkhaki;
+        background-color:darkslategray;
+        padding: 8px 20px;
+        border-radius:5px ;
+    }
+    button:hover{
+        background-color:darkcyan;
+        cursor: pointer;
+    }
+</style>
+<body>
+<canvas id="canvas"></canvas>
+<div class="display">
+    <p name="explain">
+        <sapn style="font-weight:bold; color: darkblue">操作说明：</sapn>
+        “W,S,A,D”或“↑，↓，←，→”方向键控制方向即可
+    </p>
+    <button id="restart">重来</button>
+</div>
+</body>
+</html>
