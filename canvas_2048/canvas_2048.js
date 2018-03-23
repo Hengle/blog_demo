@@ -1,6 +1,6 @@
 window.onload = function(){
     var restart = document.getElementById("restart");
-    restart.addEventListener("click",function(){
+    restart.addEventListener("click",function(){ // 重新开始
         _init(4);
         draw_2048();
     });
@@ -148,7 +148,7 @@ window.onload = function(){
                         if(cur > first && list[cur] == list[cur - 1]){
                             list[cur - 1] += list[cur];
                             removeBy(list , cur);
-                            first = cur;
+                            first = cur; // 合并后标记当前位置为起始点，以免再次被合并
                         }
                     }
                 }
